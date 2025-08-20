@@ -25,6 +25,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container{
@@ -43,6 +44,21 @@
     cursor: pointer;
 }
 
+    .shoes-bag-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    margin: auto;
+    }
+
+ .see-section{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #FF9D00;
+    cursor: pointer;
+   }
+
 
 
 /* nav area style */
@@ -50,8 +66,9 @@
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 20px auto;
+    margin: auto;
     align-items: center;
+    margin-top: 20px;
 }
 
 .search-parent{
@@ -74,7 +91,7 @@ nav{
     padding-left: 40px;
 }
 
-.search-parent input::placeholder{
+.common-input::placeholder{
     color: #CCCCCC;
     font-style: italic;
     font-size: 1rem;
@@ -146,6 +163,10 @@ nav{
     gap: 30px;
     margin-top: 20px;
 }
+.varient h3{
+  font-weight: 600;
+  font-size: 3rem;
+}
 
 .cat-a, .cat-b, .cat-c{
     display: flex;
@@ -179,8 +200,104 @@ nav{
     background: linear-gradient(170.38deg, rgba(66, 137, 255, 1),rgba(63, 7, 248, 1) 100%);
    }
 
-.varient h3{
-  font-weight: 600;
-  font-size: 3rem;
-}
+   /* shoes and bag area design */
+
+   .shoes-bag-container{
+    background-color: #F4F4F4;
+    margin: 70px auto;
+    padding-bottom: 50px;
+   }
+   /* shoes area design */
+   .shoes-container{
+    max-width: 1280px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+   }
+   .card-container{
+    width: 360px;
+    height: 480px;
+    background-color: white;
+    text-align: center;
+    padding: 25px; 
+      border-radius: 20px;
+   }
+   .card-container img{
+    width: 300px;
+    height: 202px;
+   }
+  .card-container h3{
+    color: #1F1F1F;
+    font-weight: 500;
+    font-size: 1.5rem;
+    
+
+  }
+ .card-container p{
+    font-size: 1rem;
+    color: #4E4E4E;
+    margin-top: 20px;
+ }
+  .price-tag{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #000000;
+    display: inline-block;
+    margin-top: 10px;
+  }
+  .card-container .panda-btn{
+    background: #000000;
+    width: 160px;
+    height: 50px;
+    margin-top: 10px;
+  }
+
+  .footer-container{
+    background-color: #FFF2F1;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    height: 460px;
+    margin-bottom: 70px;
+    padding: 150px;
+  }
+  .footer-container h3{
+    color: #1F1F1F;
+    font-weight: 600;
+    font-size: 1.75rem;
+  }
+
+  .footer-container p{
+    color: #707070;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  .input-area{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  .footer-container .common-input::placeholder{
+    font-style: normal;
+    padding-left: 50px;
+    border-radius: 10px;
+  }
+  .footer-container .common-input{
+    border: none;
+    width: 560px;
+    height: 70px;
+  }
+  .footer-container .panda-btn{
+    width: 140px;
+    height: 70px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* border-top-left-radius: 0;
+     border-bottom-left-radius: 0; */
+     border-radius: 0 10px 10px 0;
+  }
+  
+
 
