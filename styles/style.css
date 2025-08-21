@@ -71,6 +71,33 @@ nav{
     margin-top: 20px;
 }
 
+.product-li{
+  position: relative;
+}
+.dropdown-nav-items{
+  position: absolute;
+  background-color: white;
+  top: 30%;
+  right: 0;
+  width: 100px;
+  text-align: center;
+  padding: 15px 0;
+  border-radius: 0 0 10px 10px;
+  box-shadow: 2px 0 4px 0 rgba(0, 0, 0, 15%);
+  visibility: hidden;
+   
+}
+
+.product-li:hover .dropdown-nav-items{
+  visibility: visible;
+  top: 100%;
+  transition: 0.5s;
+}
+ 
+.dropdown-nav-items li{
+  margin-bottom: 7px 0;
+}
+
 .search-parent{
      position: relative;   
 }
